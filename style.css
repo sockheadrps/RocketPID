@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+
+#asteroid {
+  position: absolute;
+  left: 20%;
+  top: 30px;
+}
+
+#block img {
+  width: 330px;
+  position: absolute;
+
+}
+
+#bullet {
+  position: absolute;
+  background-color: orange;
+  width: 10px;
+  height: 50px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  left: 0;
+  top: 70%;
+
+  /* display: none; */
+}
+
+#ship {
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 0;
+  top: 70%;
+  transition: left 1s;
+}
