@@ -2,6 +2,21 @@ body {
   background-color: black;
 }
 
+#game-board {
+  position: relative;
+  width: 80%;
+  height: 60vh; /* Adjust the height as needed */
+}
+
+#positionChart {
+  display: block;
+  margin: 0 auto; /* Center the chart horizontally */
+  width: 100%; /* Adjust the width as needed */
+  max-width: 800px; /* Limit the maximum width of the chart */
+  height: 200px; /* Adjust the height as needed */
+  background-color: #fff; /* Add a white background to the chart */
+}
+
 #asteroid {
   position: absolute;
   left: 20%;
@@ -11,7 +26,6 @@ body {
 #block img {
   width: 330px;
   position: absolute;
-
 }
 
 #bullet {
@@ -23,14 +37,26 @@ body {
   border-top-left-radius: 5px;
   left: 0;
   top: 70%;
-
-  /* display: none; */
 }
 
 #ship {
-  transform: rotate(-45deg);
   position: absolute;
   left: 0;
   top: 70%;
   transition: left 1s;
+}
+
+.targeted {
+  border: 2px solid red; /* Adjust border color and thickness as needed */
+}
+
+#control-panel {
+  position: fixed;
+  bottom: 20px; /* Position at the bottom */
+  left: 20px; /* Position on the left */
+  padding: 20px; /* Increase padding for a larger panel */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Increase width for a larger panel */
 }
